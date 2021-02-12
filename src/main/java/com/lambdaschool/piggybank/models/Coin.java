@@ -12,19 +12,24 @@ public class Coin
     private int quantity;
     private double value;
     private String name;
-    private String names;
+    private String nameplural;
 
-    public Coin(int quantity, double value, String name, String names)
+    public Coin(int quantity, double value, String name, String nameplural)
     {
         this.quantity = quantity;
         this.value = value;
         this.name = name;
-        this.names = names;
+        this.nameplural = nameplural;
     }
 
     public Coin()
     {
         //required by jpa
+    }
+
+    public int getCoinId()
+    {
+        return coinId;
     }
 
     public int getQuantity()
@@ -57,15 +62,16 @@ public class Coin
         this.name = name;
     }
 
-    public String getNames()
+    public String getNameplural()
     {
-        return names;
+        return nameplural;
     }
 
-    public void setNames(String names)
+    public void setNameplural(String nameplural)
     {
-        this.names = names;
+        this.nameplural = nameplural;
     }
+
 
     @Override
     public String toString()
@@ -75,7 +81,7 @@ public class Coin
                 ", quantity=" + quantity +
                 ", value=" + value +
                 ", name='" + name + '\'' +
-                ", names='" + names + '\'' +
+                ", nameplural='" + nameplural + '\'' +
                 '}';
     }
 }
