@@ -33,15 +33,15 @@ public class CoinController
 
             if (c.getQuantity() == 1)
             {
-                System.out.println(c.getQuantity() + "" + c.getName());
+                System.out.println(c.getQuantity() + " " + c.getName());
             } else
             {
-                System.out.println(c.getQuantity() + "" + c.getNameplural());
+                System.out.println(c.getQuantity() + " " + c.getNameplural());
             }
         }
 
         System.out.print("Your bank holds " + total);
-        return new ResponseEntity<>(total, HttpStatus.OK);
+        return new ResponseEntity<>( HttpStatus.OK);
     }
 
 }
