@@ -41,6 +41,7 @@ public class CoinController
         }
 
         System.out.print("Your bank holds " + total);
+        System.out.println();
         return new ResponseEntity<>( HttpStatus.OK);
     }
 
