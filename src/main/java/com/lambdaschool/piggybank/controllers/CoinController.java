@@ -29,7 +29,7 @@ public class CoinController
 
         for (Coin c : myList)
         {
-            totalValue += c.getValue() * c.getQuantity();
+            total += c.getValue() * c.getQuantity();
 
             if (c.getQuantity() == 1)
             {
@@ -41,7 +41,7 @@ public class CoinController
         }
 
         System.out.print("Your bank holds " + total);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(total, HttpStatus.OK);
     }
 
 }
