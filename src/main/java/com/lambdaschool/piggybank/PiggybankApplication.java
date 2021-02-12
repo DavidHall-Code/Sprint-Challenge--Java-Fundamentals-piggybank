@@ -13,3 +13,5 @@ public class PiggybankApplication
     }
 
 }
+
+// Process finished with exit code 0
