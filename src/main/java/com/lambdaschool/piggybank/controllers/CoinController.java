@@ -25,7 +25,7 @@ public class CoinController
         List<Coin> myList = new ArrayList<>();
         coinrepos.findAll().iterator().forEachRemaining(myList::add);
 
-        double totalValue = 0.0;
+        double total = 0.0;
 
         for (Coin c : myList)
         {
@@ -40,7 +40,7 @@ public class CoinController
             }
         }
 
-        System.out.print("Your bank holds " + totalValue);
+        System.out.print("Your bank holds " + total);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
