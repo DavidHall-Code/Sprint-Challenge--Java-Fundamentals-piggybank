@@ -1,0 +1,17 @@
+#
+Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+A: Java is pretty much object oriented. It would be hard not to do objects
+#
+Explain how you connected your solution to a database, including what code was necessary for this task.
+A: First checked for the database file (data.sql) was in the resource folder. I then called the "coins" table in the Coin.java file
+    in order to create the table of coins in which the controller can then be programmed to pull the data.
+#
+Explain the advantages of the project structure (packages) you used.
+A: The 3 project packages that were added were: models, controllers and repositories. Models is where you would store
+    the Main class .java file. This file contains your main setup such as your constructor as well as you setters and
+    getters. The repositories is the file that you use to extend the CRUD repository. Finally you have the controllers.
+    This is where you write the code that utilizes code from the models as well as the database file (data.sql).
+#
+Explain the differences between Abstract Classes and Interfaces, including how they are used in your application?
+A: Interfaces have methods for the child (repositories). Abstract classes do the same but also have variables and can
+define methods.
